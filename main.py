@@ -32,7 +32,7 @@ class Stars(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
     self.speed = random.randint(1,2)
-    self.size = random.randint(1,2)
+    self.size = random.randint(1,3)
     self.pos = random.randrange(WIDTH_WIN), random.randrange(HEIGHT_WIN)
     self.image = pygame.Surface((self.size * 2, self.size * 2))
     pygame.draw.circle(self.image, pygame.Color(
